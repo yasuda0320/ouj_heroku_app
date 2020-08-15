@@ -11,7 +11,7 @@ print <<EOS
   <body>
     <table>
       <thead>
-        <tr><th>科目名</th><th>2019年度2学期</th><th>2019年度1学期</th><th></th><th></th><th></th></tr>
+        <tr><th>科目名</th><th>2019年度2学期</th><th>2019年度1学期</th><th>区分1</th><th>区分2</th><th>コース</th></tr>
       </thead>
       <tbody>
 EOS
