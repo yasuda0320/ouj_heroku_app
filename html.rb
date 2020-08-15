@@ -11,7 +11,7 @@ print <<EOS
   <body>
     <table>
       <thead>
-        <tr><th>科目名</th><th>2019年度2学期</th><th>2019年度1学期</th></tr>
+        <tr><th>科目名</th><th>2019年度2学期</th><th>2019年度1学期</th><th></th><th></th><th></th></tr>
       </thead>
       <tbody>
 EOS
@@ -27,7 +27,7 @@ AVERAGES.each do |average|
     difficulty1 = ave1.to_f >= 90 ? ' class="very_easy"' : (ave1.to_f < 60 ? ' class="hard"' : '')
   end
   print <<-EOS
-        <tr><td>#{average[0]}</td><td#{difficulty2}>#{ave2}</td><td#{difficulty1}>#{ave1}</td></tr>
+        <tr><td>#{average[0]}</td><td#{difficulty2}>#{ave2}</td><td#{difficulty1}>#{ave1}</td><td>#{average[3]}</td><td>#{average[4]}</td><td>#{average[5]}</td></tr>
   EOS
 end
 
